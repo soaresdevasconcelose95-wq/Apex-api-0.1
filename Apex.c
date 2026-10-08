@@ -1,5 +1,6 @@
 #include <unistd.h>                                        #include <stdio.h>                                         #include <fcntl.h>                                         #include <string.h>
-#include <sys/ioctl.h>                                     #define APX_SUCCESS 0                                      #define APX_ERROR 1                                        struct {                                                   int fd;
+#include <sys/ioctl.h>                                     #define APX_SUCCESS 0
+#define APX_ERROR 1                                        struct {                                                   int fd;
 } Apex;                                                    int apexInit() {
 Apex.fd = open("/dev/mali0", O_RDWR);
 if (Apex.fd > 0) {                                         printf("initialize\n");
