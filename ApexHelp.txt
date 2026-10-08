@@ -1,1 +1,2 @@
 a funcão apexInit() vai acionar o driver kbase do kernel para a funcao apexCommand poder ser utilizada por ioctl      a funcao apexTerminate() vai fqzer um close na variavel fd da Struct Apex
+essa API é compatível dó com Mali-G57 por usar o kbase
